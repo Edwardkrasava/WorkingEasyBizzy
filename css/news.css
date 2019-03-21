@@ -1,0 +1,123 @@
+.news_section {
+    padding-top: 12px;
+    padding-bottom: 123px;
+    background-image: url(../img/back_news.png);
+    position: relative;
+    z-index: 1;
+}
+
+.news_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news_box_wrapper {
+    margin: auto;
+    padding-left: 30px;
+    max-height: 420px;
+    box-sizing: border-box;
+}
+
+.news_box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 390px;
+    width: 100%;
+    margin: 74px auto 22px auto;
+    padding-left: 15px;
+}
+
+.news_box_1_3 {
+    margin: 12px auto 22px auto;
+}
+
+.image_news {
+    position: relative;
+    z-index: 3;
+    max-width: 330px;
+    height: 187px;
+    box-shadow: 0 37px 59px rgba(213, 127, 0, 0.4);
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.description_news {
+    position: relative;
+    z-index: 3;
+    max-width: 300px;
+    max-height: 101px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.news_box::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    right: 74px;
+    width: 312px;
+    height: 366px;
+    border: 15px solid #fb9600;
+    opacity: 0.1;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.date_news {
+    max-width: 61px;
+    height: 10px;
+    color: #616161;
+    font-family: Lato;
+    font-size: 12px;
+}
+
+.news_box:hover .border_news {
+    opacity: 1.0;
+}
+
+.news_box:hover::before {
+    opacity: 1.0;
+}
+
+.news_box:hover .image_news {
+    opacity: 1.0;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 360px) {
+    .description_news {
+        max-width: 260px;
+    }
+
+    .image_news {
+        max-width: 270px;
+    }
+
+    .news_box {
+        max-width: 280px;
+    }
+
+    .news_box::before {
+        max-width: 270px;
+        right: 45px;
+        border: 8px solid #fb9600;
+    }
+
+    .news_list {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+} 

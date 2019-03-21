@@ -1,0 +1,66 @@
+@import url('packages.css');
+@import url('header.css');
+@import url('first_section.css');
+@import url('community_map.css');
+@import url('video_section.css');
+@import url('pdf.css');
+@import url('box_with_woman.css');
+@import url('news.css');
+@import url('answers.css');
+@import url('bottom_woman.css');
+@import url('footer.css');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.a_btn_fixed {
+    display: none;
+}
+
+.button_fixed {
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    right: 20px;
+    /* width: 40px;
+    height: 30px; */
+    max-width: 40px;
+    max-height: 40px;
+    /* background-image: url(../img/up.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 75%; */
+}
+
+@media screen and (max-width: 640px) {
+    .title {
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+}

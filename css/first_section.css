@@ -1,0 +1,154 @@
+.section_first {
+    background-image: url(../img/start_image.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1046px;
+}
+
+.btn {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: #fb9600;
+    border: 1px solid #fb9600;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.container h1 {
+    margin-bottom: 22px;
+    padding-top: 85px;
+    font-family: 'Merriweather', serif;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-registraion {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #fb9600;
+    max-width: 300px;
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px 0;
+    transition: 0.3s;
+    box-shadow: 0px 30px 100px 20px rgba(244, 221, 187, 1);
+    -moz-box-shadow: 0px 30px 100px 20px rgba(244, 221, 187, 1);
+}
+
+.btn-registraion:hover {
+    color: #fb9600;
+    background-color: white;
+    box-shadow: none;
+}
+
+.section_for_circles {
+    position: absolute;
+    top: 593px;
+    left: 25.5%;
+}
+
+.circles {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 194px;
+    height: 194px;
+}
+
+.circle_small {
+    position: absolute;
+    width: 194px;
+    height: 194px;
+}
+
+.circle_middle {
+    position: absolute;
+    height: 442px;
+    width: 442px;
+}
+
+.circle_big {
+    position: absolute;
+    flex: 0 0 808px;
+    height: 808px;
+    width: 808px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+.btn-round {
+    position: relative;
+    flex: 0 0 60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50% !important;
+    background-image: url(../img/Rectangle\ 2.png);
+    background-size: 26%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.3s;
+    box-shadow: 0px 37px 59px 0px rgba(213, 127, 0, 0.3);
+}
+
+.btn-round:hover {
+    box-shadow: none;
+    transform: scale(0.9);
+}
+
+.button_round_span {
+    position: relative;
+    align-items: center;
+    left: 50%;
+    display: flex;
+    z-index: 99;
+    transform: translateX(-30px);
+}
+
+.span_for_round {
+    max-width: 90px;
+    margin-left: 33px;
+    text-align: left;
+}
+
+@media screen and (max-width: 740px) {
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .btn-registraion {
+        max-width: 260px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .btn-registraion {
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 677px) {
+    .circle_big {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .circle_middle {
+        display: none;
+    }
+}

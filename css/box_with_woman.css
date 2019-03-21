@@ -1,0 +1,63 @@
+.container_with_woman {
+    padding-top: 210px;
+}
+
+.box_with_woman {
+    box-sizing: border-box;
+    margin: 98px auto -60px auto;
+    max-width: 962px;
+    width: 100%;
+    min-height: 326px;
+    border: 15px solid #fb9600;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.box_with_woman::after {
+    content: '';
+    background-image: url(../img/Woman_with_shadow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    height: 381px;
+    width: 246px;
+    left: 64px;
+    bottom: -1px;
+}
+
+.text_and_button {
+    padding-bottom: 24px;
+    margin-left: 330px;
+    text-align: left;
+}
+
+.title_with_woman {
+    font-family: "Lato", sans-serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    max-width: 524px;
+    width: 100%;
+}
+
+.btn-registraion_with_woman {
+    box-shadow: 0 37px 59px rgba(213, 127, 0, 0.3);
+    margin-left: 0;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 595px) {
+    .box_with_woman::after {
+        display: none;
+    }
+
+    .text_and_button {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .btn-registraion_with_woman {
+        margin: 20px auto;
+    }
+}

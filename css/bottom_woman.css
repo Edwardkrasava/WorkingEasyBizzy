@@ -1,0 +1,128 @@
+.container_with_bottom_woman {
+    padding-top: 155px;
+}
+
+.box_with_bottom_woman {
+    box-sizing: border-box;
+    margin: 98px auto -60px auto;
+    max-width: 962px;
+    width: 100%;
+    border: 15px solid #fb9600;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}   
+
+
+.box_with_bottom_woman::after {
+    content: '';
+    background-image: url(../img/Woman_with_shadow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    height: 381px;
+    width: 246px;
+    left: 64px;
+    bottom: -1px;
+}
+
+.text_and_inputs{
+    margin: 50px 40px 40px 330px;
+    display: flex;
+    flex-direction: column;
+}
+
+.all_inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inputs_field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    height: 28px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #84888a;
+    width: 210px;
+    overflow: hidden;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom: 1px solid #fb9600;
+}
+
+.input::placeholder {
+    opacity: 0.5;
+    color: #171f23;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.title_in_bottom_woman {
+    text-align: left;
+    font-family: "Lato", sans-serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    max-width: 524px;
+    width: 100%;
+}
+
+.image_input {
+    padding-right: 11px;
+}
+
+.image_input_3 {
+    padding-left: 4px;
+}
+
+.btn-send {
+    margin-top: 110px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.info {
+    text-align: left;
+    padding: 5px;
+    font-size: 11px;
+    color: #fff;
+    position: absolute;
+    display: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 1px 2px #a9a9a9;
+    -moz-box-shadow: -1px 1px 2px #a9a9a9;
+    box-shadow: -1px 1px 2px #a9a9a9;
+
+@media screen and (max-width: 630px){
+    .box_with_bottom_woman::after{
+        display: none;
+    }
+
+    .text_and_inputs{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .title_in_bottom_woman {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 561px){
+    
+    .inputs_field{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,37 @@
+footer {
+    margin-top: 94px;
+    background-color: #000000;
+    opacity: 0.9;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description_footer {
+    margin: 0;
+    opacity: 0.2;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 39px;
+}
+
+.href_footer {
+    display: inline;
+}
+
+.href_footer_a {
+    opacity: 1.0;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+@media screen and (max-width: 830px) {
+    .container_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
